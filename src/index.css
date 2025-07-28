@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans", sans-serif;
+  --text-secondary: #525252;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+  font-size: 18px;
+}
