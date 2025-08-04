@@ -18,7 +18,7 @@ function App() {
           <nav
             role="tablist"
             aria-label="product-categories"
-            className="flex overflow-x-auto whitespace-nowrap space-x-6 border-b text-neutral-600"
+            className="flex overflow-x-auto whitespace-nowrap space-x-6 border-b text-base"
           >
             <button
               role="tab"
@@ -70,7 +70,7 @@ function App() {
           <img className="w-full h-[180px]" src={image} />
           <h2 className="text-xl font-semibold mt-8">Eco-Friendly Choice</h2>
           <p className="mt-2 text-secondary">With our sustainable approach, we curate clothing that makes a statement of care—care for the planet, and for the art of fashion.</p>
-          <ul className="mt-8 space-y-4 w-[259px]">
+          <ul className="mt-8 space-y-4 w-[259px] text-base">
             {/* TODO: Remove Icon borders */}
             <li className="flex h-12 gap-2 items-center">
               <span className="w-12 flex items-center justify-center border-1 border-indigo-700 h-12 rounded-full">Icon</span>
