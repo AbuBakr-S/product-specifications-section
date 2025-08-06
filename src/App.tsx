@@ -1,4 +1,9 @@
-import image from './assets/product-img-main.jpg';
+import productImageMobile from './assets/product-img-main-mobile.jpg';
+import productImageTablet from './assets/product-img-main-tablet.jpg';
+import vectorIcon from './assets/vectorIcon.png';
+import paintIcon from './assets/paintIcon.png';
+import plantIcon from './assets/plantIcon.png';
+import waterFlashIcon from './assets/waterFlashIcon.png';
 
 function App() {
 
@@ -67,25 +72,45 @@ function App() {
           aria-labelledby="tab-1"
           className="mt-8"
         >
-          <img className="w-full h-[180px]" src={image} />
-          <h2 className="text-xl font-semibold mt-8">Eco-Friendly Choice</h2>
+
+          <img
+            src={productImageMobile}
+            alt="Mobile"
+            className="block md:hidden w-full aspect-[311/180]"
+          />
+
+          <img
+            src={productImageTablet}
+            alt="Tablet"
+            className="hidden lg:hidden md:block w-full aspect-[704/384]"
+          />
+
+          <h2 className="text-2xl font-medium mt-8">Eco-Friendly Choice</h2>
           <p className="mt-2 text-secondary">With our sustainable approach, we curate clothing that makes a statement of care—care for the planet, and for the art of fashion.</p>
           <ul className="mt-8 space-y-4 w-[259px] text-base">
             {/* TODO: Remove Icon borders */}
             <li className="flex h-12 gap-2 items-center">
-              <span className="w-12 flex items-center justify-center border-1 border-indigo-700 h-12 rounded-full">Icon</span>
+              <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
+                <img src={vectorIcon} height="24" width="24" />
+              </span>
               <span>Recycled Materials</span>
             </li>
             <li className="flex h-12 gap-2 items-center">
-              <span className="w-12 flex items-center justify-center border-1 border-indigo-700 h-12 rounded-full">Icon</span>
+              <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
+                <img src={paintIcon} height="24" width="24" />
+              </span>
               <span>Low Impact Dye</span>
             </li>
             <li className="flex h-12 gap-2 items-center">
-              <span className="w-12 flex items-center justify-center border-1 border-indigo-700 h-12 rounded-full">Icon</span>
+              <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
+                <img src={plantIcon} height="24" width="24" />
+              </span>
               <span>Carbon Neutral</span>
             </li>
             <li className="flex h-12 gap-2 items-center">
-              <span className="w-12 flex items-center justify-center border-1 border-indigo-700 h-12 rounded-full">Icon</span>
+              <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
+                <img src={waterFlashIcon} height="24" width="24" />
+              </span>
               <span>Water Conservation</span>
             </li>
           </ul>
