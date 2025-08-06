@@ -87,8 +87,7 @@ function App() {
 
           <h2 className="text-2xl font-medium mt-8">Eco-Friendly Choice</h2>
           <p className="mt-2 text-secondary">With our sustainable approach, we curate clothing that makes a statement of care—care for the planet, and for the art of fashion.</p>
-          <ul className="mt-8 space-y-4 w-[259px] text-base">
-            {/* TODO: Remove Icon borders */}
+          <ul className="mt-8 w-[259px] md:w-full text-base flex flex-col space-y-4 md:grid md:grid-cols-2 md:gap-x-6 md:gap-y-4 md:space-y-0">
             <li className="flex h-12 gap-2 items-center">
               <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
                 <img src={vectorIcon} height="24" width="24" />
