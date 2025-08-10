@@ -1,5 +1,6 @@
 import productImageMobile from './assets/product-img-main-mobile.jpg';
 import productImageTablet from './assets/product-img-main-tablet.jpg';
+import productImageDesktop from './assets/product-img-main-desktop.jpg';
 import vectorIcon from './assets/vectorIcon.png';
 import paintIcon from './assets/paintIcon.png';
 import plantIcon from './assets/plantIcon.png';
@@ -70,7 +71,7 @@ function App() {
           role="tabpanel"
           id="tab-panel-1"
           aria-labelledby="tab-1"
-          className="mt-8"
+          className="mt-8 md:flex md:flex-col lg:flex-row lg:gap-6"
         >
 
           <img
@@ -85,34 +86,44 @@ function App() {
             className="hidden lg:hidden md:block w-full aspect-[704/384]"
           />
 
-          <h2 className="text-2xl font-medium mt-8">Eco-Friendly Choice</h2>
-          <p className="mt-2 text-secondary">With our sustainable approach, we curate clothing that makes a statement of care—care for the planet, and for the art of fashion.</p>
-          <ul className="mt-8 w-[259px] md:w-full text-base flex flex-col space-y-4 md:grid md:grid-cols-2 md:gap-x-6 md:gap-y-4 md:space-y-0">
-            <li className="flex h-12 gap-2 items-center">
-              <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
-                <img src={vectorIcon} height="24" width="24" />
-              </span>
-              <span>Recycled Materials</span>
-            </li>
-            <li className="flex h-12 gap-2 items-center">
-              <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
-                <img src={paintIcon} height="24" width="24" />
-              </span>
-              <span>Low Impact Dye</span>
-            </li>
-            <li className="flex h-12 gap-2 items-center">
-              <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
-                <img src={plantIcon} height="24" width="24" />
-              </span>
-              <span>Carbon Neutral</span>
-            </li>
-            <li className="flex h-12 gap-2 items-center">
-              <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
-                <img src={waterFlashIcon} height="24" width="24" />
-              </span>
-              <span>Water Conservation</span>
-            </li>
-          </ul>
+          <img
+            src={productImageDesktop}
+            // src="https://placehold.co/367x256"
+            alt="Tablet"
+            className="lg:block hidden w-[367px] h-auto aspect-[367/256]"
+          />
+
+          <div className="flex flex-col">
+            <h2 className="text-2xl font-medium lg:mt-0 mt-8">Eco-Friendly Choice</h2>
+            <p className="mt-2 text-base">With our sustainable approach, we curate clothing that makes a statement of care—care for the planet, and for the art of fashion.</p>
+            <ul className="mt-8 w-[259px] md:w-full text-base flex flex-col gap-y-4 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-12 lg:gap-8 md:space-y-0">
+              <li className="flex h-12 gap-2 items-center">
+                <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
+                  <img src={vectorIcon} height="24" width="24" />
+                </span>
+                <span>Recycled Materials</span>
+              </li>
+              <li className="flex h-12 gap-2 items-center">
+                <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
+                  <img src={paintIcon} height="24" width="24" />
+                </span>
+                <span>Low Impact Dye</span>
+              </li>
+              <li className="flex h-12 gap-2 items-center">
+                <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
+                  <img src={plantIcon} height="24" width="24" />
+                </span>
+                <span>Carbon Neutral</span>
+              </li>
+              <li className="flex h-12 gap-2 items-center">
+                <span className="w-12 flex items-center justify-center shadow-soft h-12 rounded-full">
+                  <img src={waterFlashIcon} height="24" width="24" />
+                </span>
+                <span>Water Conservation</span>
+              </li>
+            </ul>
+          </div>
+
         </section>
 
         <section
