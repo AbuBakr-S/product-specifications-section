@@ -10,7 +10,7 @@ function App() {
 
   return (
     <main className="p-4 min-w-[375px] max-w-[1344px] mx-auto">
-      <section className="mt-12 mx-4">
+      <section className="mt-12 md:mt-16 lg:mt-24 mx-4">
         <header>
           <h1 className="text-3xl md:text-5xl">Discover timeless elegance</h1>
         </header>
