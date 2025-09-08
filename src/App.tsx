@@ -29,7 +29,7 @@ function App() {
                 id={`tab-${tab.id}`}
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-2 pb-3 min-w-max h-9 ${
-                  activeTab === tab.id ? 'border-b-2 border-current text-indigo-700' : ''
+                  activeTab === tab.id ? 'border-b-2 border-current text-indigo-700 hover:text-indigo-800' : 'hover:text-neutral-900'
                 }`}
               >
                 {tab.label}
