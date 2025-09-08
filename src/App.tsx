@@ -36,7 +36,7 @@ function App() {
               </button>
             ))}
           </nav>
-          <div className="pointer-events-none absolute top-0 right-0 h-full w-[17px] bg-gradient-to-l from-white to-transparent" />
+          <div className="pointer-events-none absolute top-0 -right-4 h-full w-16 md:hidden bg-gradient-to-l from-white via-white/70 to-transparent"/>
         </div>
 
         {/* Panels */}
